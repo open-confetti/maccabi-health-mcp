@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.vitest/
+
+# Credentials, session files and downloaded documents.
+.env
+.env.*
+*.har
+*.pcap
+*.cookie
+*.cookies
+signed-in.json
+sign-in-attempt.json
+*.pdf
+*.dcm
+
+.DS_Store
+*.log

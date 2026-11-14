@@ -1,0 +1,40 @@
+{
+  "name": "maccabi-health",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Read-only CLI and MCP server for a Maccabi Healthcare member's own records.",
+  "license": "MIT",
+  "author": "open-confetti",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "release": "node scripts/build.mjs --release",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "test": "npm run build && vitest run",
+    "coverage": "npm run build && node scripts/coverage.mjs --min 98",
+    "check": "npm run typecheck && npm run lint && npm test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.4.0",
+    "css-select": "5.2.2",
+    "domhandler": "5.0.3",
+    "domutils": "3.2.2",
+    "entities": "8.1.0",
+    "htmlparser2": "10.1.0",
+    "tough-cookie": "6.0.2",
+    "zod": "4.6.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.6",
+    "@modelcontextprotocol/client": "2.1.0",
+    "@types/node": "24.13.6",
+    "esbuild": "0.28.2",
+    "typescript": "7.0.2",
+    "vitest": "5.0.1"
+  }
+}
