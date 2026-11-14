@@ -36,8 +36,8 @@ checks its SHA-256 before anything can run it.
 
 ```sh install
 set -eu
-REF="__RELEASE_COMMIT__"
-SHA256="__RELEASE_SHA256__"
+REF="e7bde98f5ae308816f9450899705fa94c03df551"
+SHA256="1d6f6a7311fa014b6a0269cbb1905aa616d925586bc08e64deb716a6647f62be"
 REPO="open-confetti/maccabi-health-mcp"
 DIR="$HOME/.local/share/maccabi-health"
 FILE="$DIR/maccabi-health.mjs"
